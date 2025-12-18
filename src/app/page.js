@@ -17,7 +17,8 @@ export default function Home() {
     { placeholder: "separator", name: "seperator" },
     { placeholder: "Periodogram estimation", name: "periodogram" },
     { placeholder: "Welch's method", name: "welchs_estimate" },
-    { placeholder: "separator", name: "seperator" },
+    { placeholder: "separator2", name: "seperator" },
+    { placeholder: "System Simulation", name: "simulation" },
     { placeholder: "> Interactive Prompt", name: "prompt" },
     { placeholder: "Help?", name: "help" }
   ];
@@ -38,6 +39,8 @@ export default function Home() {
         return <Periodogram />
       case "welchs_estimate":
         return <WelchsEstimate />
+      case "simulation":
+        return <Simulation />        
       case "prompt":
         return <Prompt />;
       case "help":
@@ -75,7 +78,10 @@ export default function Home() {
           );
         }  else if (item.name === "seperator") {
           return (
-            <div className="h-px bg-gray-300 my-2 w-full" key="separator"></div>
+            <div 
+              key={`prompt-${item.name}-${index}`}
+              className="h-px bg-gray-300 my-2 w-full"
+            ></div>
           );
         } else {
           return (
