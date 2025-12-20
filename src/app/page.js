@@ -7,6 +7,7 @@ import { LeastSqaureLinearPhaseFIRDesign } from './components/AppFrame/LeastSqua
 import { Periodogram } from './components/AppFrame/Periodogram/Periodogram';
 import { Prompt } from './components/AppFrame/Prompt/Prompt';
 import { WelchsEstimate } from './components/AppFrame/WelchsEstimate/WelchsEstimate';
+import { SensorFusionSimulation } from './components/AppFrame/SensorFusionSimulation/SensorFusionSimulation';
 
 export default function Home() {
   const items = [
@@ -42,6 +43,8 @@ export default function Home() {
         return <Periodogram />
       case "welchs_estimate":
         return <WelchsEstimate />
+      case "sensor_fusion_simulation":
+        return <SensorFusionSimulation />
       case "prompt":
         return <Prompt />;
       case "help":
