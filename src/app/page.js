@@ -11,6 +11,7 @@ import { Simulation } from './components/AppFrame/Simulation/Simulation';
 
 export default function Home() {
   const items = [
+    { placeholder: "Filter Design", name: "title_filter_design" },
     { placeholder: "Zero-pole placement", name: "zero_pole" },
     { placeholder: "Windowing method", name: "fir_filter_design" },
     { placeholder: "Analog-to-digital transform", name: "iir_filter_design" },
@@ -27,7 +28,7 @@ export default function Home() {
     { placeholder: "Help?", name: "help" }
   ];
 
-  const [selectedItem, setSelectedItem] = React.useState(items[0]);
+  const [selectedItem, setSelectedItem] = React.useState(items[1]);
 
   const addComponent = () => {
     switch (selectedItem.name) {
@@ -69,7 +70,17 @@ export default function Home() {
       {/* Sidebar */}
       <aside className="fixed flex flex-col px-5 py-4 border-r border-slate-200 z-30 bg-white h-full">
         {items.map((item, index) => {
-          if (item.name === "prompt") {
+          if (item.name.match("title.*")) {
+            return (
+              <h1
+                key={`prompt-${item.name}-${index}`}
+                className={`flex text-bold h-10 p-2 text-sm w-48 
+                  ${selectedItem.name === item.name ? "bg-white hover:bg-gray-50 shadow" : ""}`}
+              >
+                <p className="font-bold">{item.placeholder}</p>
+              </h1>
+            );
+          } else if (item.name === "prompt") {
             return (
               <button
                 key={`prompt-${item.name}-${index}`}
