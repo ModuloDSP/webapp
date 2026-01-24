@@ -117,7 +117,7 @@ export default function Home() {
             return (
               <h1
                 key={`prompt-${item.name}-${index}`}
-                className={`flex text-bold h-10 p-2 text-sm w-48 
+                className={`flex font-bold h-10 p-2 text-sm w-48 
                   ${selectedItem.name === item.name ? "bg-white hover:bg-gray-50 shadow" : ""}`}
               >
                 <p className="font-bold">{item.placeholder}</p>

@@ -208,19 +208,19 @@ export const Simulation = () => {
         <>
             <div className="w-[calc(100vw-230px)] mr-5 flex justify-between fixed bg-white z-50 pl-3">
                 <div className="flex">
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_GENERATOR)}>Step</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_PLANT)}>Plant</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_SUM)}>Sum</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_DISCRETE_PID)}>PID</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_MODIFIER)}>Mod</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_FSFILTER)}>FLT</button>
+                    <button title='Add step function'              className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_GENERATOR)}>Step</button>
+                    <button title='Add dynamic plant'              className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_PLANT)}>Plant</button>
+                    <button title='Add sum block'                  className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_SUM)}>Sum</button>
+                    <button title='Add discrete PID block'         className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_DISCRETE_PID)}>PID</button>
+                    <button title='Add modifier block'             className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_MODIFIER)}>Mod</button>
+                    <button title='Add frequency selective filter' className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_FSFILTER)}>FLT</button>
                     {/* <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_FUSION)}>FSN</button> */}
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_DISPLAY)}>🖥️</button>
+                    <button title='Add display block'              className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white text-xs" onClick={() => setSelectedMode(selectionModeEnum.ADD_DISPLAY)}>🖥️</button>
                     <div className="m-1 h-10 w-1.5 bg-gray-300 w-[5px]"></div>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white font-bold" onClick={() => setSelectedMode(selectionModeEnum.ADD_JUNCTION)}>&#9679;</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white font-bold" onClick={() => setSelectedMode(selectionModeEnum.REMOVE)}>-</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white " onClick={() => setSelectedMode(selectionModeEnum.MOVE)}>&#10021;</button>
-                    <button className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white font-bold " onClick={() => setSelectedMode(selectionModeEnum.MAKE_CONNECTION)}>&#8702;</button>
+                    <button title='Add junction'                   className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white font-bold" onClick={() => setSelectedMode(selectionModeEnum.ADD_JUNCTION)}>&#9679;</button>
+                    <button title='Remove element'                 className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white font-bold" onClick={() => setSelectedMode(selectionModeEnum.REMOVE)}>-</button>
+                    <button title='Move element'                   className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white " onClick={() => setSelectedMode(selectionModeEnum.MOVE)}>&#10021;</button>
+                    <button title='Make connection'                className="m-1 w-10 h-10 rounded bg-gray-500 hover:bg-gray-600 text-white font-bold " onClick={() => setSelectedMode(selectionModeEnum.MAKE_CONNECTION)}>&#8702;</button>
                     {showSimFinishMessage && <p className="text-green-600 mt-3 ml-4">Simluation Done!</p>}
                 </div>
                 <div>
