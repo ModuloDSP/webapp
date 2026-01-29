@@ -1,4 +1,4 @@
-# Stride web app
+# Dsptoolset web app
 An interactive controls & signal processing web app that performs:
 - Design and visualization of digital filters
 - Hybrid simulation of dynamic systems
