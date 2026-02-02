@@ -54,7 +54,7 @@ export default function Home() {
         return (
           <div className="rounded-lg shadow w-full p-5">
             <p>
-              <a className="text-blue-600" href="https://github.com/dsptoolset">Dsptoolset</a> is an opensource web app for designing and visualizing digital filters, estimating power spectral density, hybrid simulation and more.
+              <a className="text-blue-600" href="https://github.com/TinkererDSP">Tinkerer</a> is an opensource web app for designing and visualizing digital filters, estimating power spectral density, hybrid simulation and more.
               Features:
             </p>
 
@@ -86,7 +86,6 @@ export default function Home() {
               <li>- Signal Modifier</li>
             </ul>
 
-
             <br></br><h2 className="font-bold">Spectral Estimation</h2>
 
             For spectrum estimation, the app can receive:
@@ -101,7 +100,7 @@ export default function Home() {
             <br></br>
             <br></br>
             <p>
-              For additional information visit: <a className="text-blue-600" href="https://github.com/dsptoolset">https://github.com/dsptoolset</a></p>
+              For additional information visit: <a className="text-blue-600" href="https://github.com/TinkererDSP">https://github.com/TinkererDSP</a></p>
             <br></br>
           </div >
         )
