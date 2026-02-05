@@ -54,7 +54,7 @@ export default function Home() {
         return (
           <div className="rounded-lg shadow w-full p-5">
             <p>
-              <a className="text-blue-600" href="https://github.com/TinkererDSP">Tinkerer</a> is an opensource web app for designing and visualizing digital filters, estimating power spectral density, hybrid simulation and more.
+              <a className="text-blue-600" href="https://github.com/ModuloDSP">Modulo</a> is an opensource web app for designing and visualizing digital filters, estimating power spectral density, hybrid simulation and more.
               Features:
             </p>
 
@@ -100,7 +100,7 @@ export default function Home() {
             <br></br>
             <br></br>
             <p>
-              For additional information visit: <a className="text-blue-600" href="https://github.com/TinkererDSP">https://github.com/TinkererDSP</a></p>
+              For additional information visit: <a className="text-blue-600" href="https://github.com/ModuloDSP">https://github.com/ModuloDSP</a></p>
             <br></br>
           </div >
         )
